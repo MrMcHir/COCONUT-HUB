@@ -1680,11 +1680,11 @@ function lib:Window(text, preset, closebind)
                 LabelTitle.TextColor3 = color
                 LabelTitle.TextSize = 14.000
                 LabelTitle.TextXAlignment = Enum.TextXAlignment.Left
+                LabelTitle.RichText = true
                 Tab.CanvasSize = UDim2.new(0, 0, 0, TabLayout.AbsoluteContentSize.Y)
 
-                function Label:Set(totext, tocolor)
+                function Label:Set(totext)
                     LabelTitle.Text = totext
-                    LabelTitle.TextColor3 = tocolor
                 end
                 return Label
             end
