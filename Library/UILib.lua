@@ -920,15 +920,6 @@ function lib:Window(text, preset, closebind)
 
                 Tab.CanvasSize = UDim2.new(0, 0, 0, TabLayout.AbsoluteContentSize.Y)
 
-                function Slider:Set(Value)
-                    local a = tostring(val and (val / max) * (max - min) + min) or 0
-					SliderValue.Text = tostring(a)
-                    SlideFrame.Size = UDim2.new((val or 0) / max, 0, 1, 0)
-                    Slider.Value = val
-					return callback(Slider.Value)
-				end
-                Slider:Set(start)
-
                 function Slider:AddTooltip(tip)
                     if type(tip) == 'string' then
                         lib:AddToolTip(tip, Outer)
