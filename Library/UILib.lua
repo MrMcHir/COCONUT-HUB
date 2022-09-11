@@ -976,7 +976,7 @@ function lib:Window(text, preset, closebind)
                             function()
                                 while wait() do
                                     Option.BackgroundColor3 = Color3.fromRGB(34, 34, 34)
-                                    DropMain.Btn.Title.TextColor3 = Color3.fromRGB(155, 155, 155)
+                                    DropMain.Btn.Title.TextColor3 = Color3.fromRGB(255, 255, 255)
                                 end
                             end
                         )
