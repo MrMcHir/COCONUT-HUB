@@ -1,6 +1,5 @@
 {
-   "3398014311":{"name":"Restaurant Tycoon 2","Script":"","Working":false},
-   "648362523":{"name":"Breaking Point", "Script":"", "Working":true},
-   "192800":{"name":"Work at a Pizza Place", "Script":"", "Working":true},
-   "1537690962":{"name":"Bee Swarm Simulator", "Script":"", "Working":true}
+   "648362523":{"name":"Breaking Point", "Script":"https://raw.githubusercontent.com/MrMcHir/COCONUT-HUB/main/Games/Breaking%20Point.lua", "Working":true},
+   "192800":{"name":"Work at a Pizza Place", "Script":"https://raw.githubusercontent.com/MrMcHir/COCONUT-HUB/main/Games/Work%20At%20A%20Pizza%20Place.lua", "Working":true},
+   "1537690962":{"name":"Bee Swarm Simulator", "Script":"https://raw.githubusercontent.com/MrMcHir/COCONUT-HUB/main/Games/Bss.lua", "Working":true}
 }
