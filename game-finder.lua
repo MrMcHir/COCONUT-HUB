@@ -17,6 +17,8 @@ elseif game.PlaceId == 1537690962 then
     loadstring(game:HttpGet("https://raw.githubusercontent.com/MrMcHir/COCONUT-HUB/main/Games/Bss.lua"))()
 elseif game.PlaceId == 621129760 then
     loadstring(game:HttpGet("https://raw.githubusercontent.com/MrMcHir/COCONUT-HUB/main/Games/Kat.lua"))()
+elseif game.PlaceId == 537413528 then
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/MrMcHir/COCONUT-HUB/main/Games/babft.lua"))()
 else
     lib:MakeNotification({
         Name = "Game Not Found!",
