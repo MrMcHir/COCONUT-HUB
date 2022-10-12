@@ -7,6 +7,7 @@ local Mouse = LocalPlayer:GetMouse()
 local PresetColor = Color3.fromRGB(44, 120, 224)
 local CloseBind = Enum.KeyCode.RightControl
 local SectionPreset = game:GetObjects("rbxassetid://7121846230")[1]
+local http = game:GetService("HttpService")
  
 local WhitelistedMouse = { Enum.UserInputType.MouseButton1, Enum.UserInputType.MouseButton2,
     Enum.UserInputType.MouseButton3 }
@@ -1388,7 +1389,7 @@ function lib:Window(text, preset, closebind)
                 Tab.CanvasSize = UDim2.new(0, 0, 0, TabLayout.AbsoluteContentSize.Y)
             end
  
-            function ItemHold:Bind(text, preset, holdmode, flag, callback)
+            function ItemHold:Bind(text, preset, holdmode, callback)
                 local Bind, BindFrame = { Value, Binding = false, Holding = false },
                     game:GetObjects("rbxassetid://7126874744")[1]
                 BindFrame.Parent = Section
