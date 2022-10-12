@@ -375,7 +375,6 @@ function lib:Window(text, preset, closebind)
             end
  
             function ItemHold:Toggle(text, default, callback)
-                local Toggle = {}
                 local toggled = false
  
                 local Toggle = Instance.new("TextButton")
@@ -570,14 +569,8 @@ function lib:Window(text, preset, closebind)
                     )
                     toggled = not toggled
                 end
-                
-                function Toggle:Set(val)
-                    toggled = val
-                    default = val
-                end
  
                 Tab.CanvasSize = UDim2.new(0, 0, 0, TabLayout.AbsoluteContentSize.Y)
-                return Toggle
             end
  
             function ItemHold:Slider(text, min, max, start, inc, callback)
