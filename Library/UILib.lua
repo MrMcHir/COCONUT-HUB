@@ -1314,14 +1314,8 @@ function lib:Window(text, preset, closebind)
                 LabelTitle.TextColor3 = color
                 LabelTitle.TextSize = 14.000
                 LabelTitle.TextXAlignment = Enum.TextXAlignment.Left
-                
-                function Label:Set(text, color)
-                    LabelTitle.Text = text
-                    LabelTitle.TextColor3 = color
-                end
  
                 Tab.CanvasSize = UDim2.new(0, 0, 0, TabLayout.AbsoluteContentSize.Y)
-                return Label
             end
  
             function ItemHold:Textbox(text, disapper, callback)
