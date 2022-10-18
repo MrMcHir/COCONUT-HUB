@@ -35,4 +35,3 @@ else
 	Text = 	"Game: Not Supported",
     })
 end
-hahahah:Init()
