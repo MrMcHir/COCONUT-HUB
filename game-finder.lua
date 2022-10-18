@@ -4,7 +4,6 @@ spawn(function()
 	hahaha:MakeNotification({
 		Name = "Game Found!";
 		Content = "Game: " .. game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId).Name .. "!",
-		Image = "rbxassetid://11044015191",
 		Time = 5
 	})
 	wait(2)
@@ -35,7 +34,6 @@ else
 	hahaha:MakeNotification({
 		Name = "Game Not Found!",
 		Content = "Game: Not Supported",
-		Image = "rbxassetid://11044015191",
 		Time = 5
 	})
 end
