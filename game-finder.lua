@@ -39,3 +39,4 @@ else
         Time = 5
     })
 end
+hahahah:Init()
