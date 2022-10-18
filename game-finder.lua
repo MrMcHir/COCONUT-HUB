@@ -1,12 +1,10 @@
-local hahahah = loadstring(game:HttpGet("https://raw.githubusercontent.com/shlexware/Orion/main/source"))()
+local StarterGui = game:GetService("StarterGui")
 spawn(function()
 	function loadgame()
-        hahahah:MakeNotification({
-            Name = "Game Found!",
-            Content = "Game: " .. game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId).Name .. "!",
-            Icon = "rbxassetid://11044015191",
-            Time = 5
-        })
+	StarterGui:SetCore("SendNotification", {
+		Title = "Game Found!";
+		Text = 	"Game: " .. game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId).Name .. "!",
+	})
 	wait(2)
     end
 end)
@@ -32,11 +30,9 @@ elseif game.PlaceId == 9872472334 then
     loadgame()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/MrMcHir/COCONUT-HUB/main/Games/Evade.lua"))()
 else
-    hahahah:MakeNotification({
-        Name = "Game Not Found!",
-        Content = "Game: Not Supported",
-        Icon = "rbxassetid://11044015191",
-        Time = 5
+    StarterGui:SetCore("SendNotification", {
+	Title = "Game Not Found!",
+	Text = 	"Game: Not Supported",
     })
 end
 hahahah:Init()
