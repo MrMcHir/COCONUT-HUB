@@ -1,12 +1,13 @@
-local lib = loadstring(game:HttpGet("https://raw.githubusercontent.com/shlexware/Orion/main/source"))()
+local hahahah = loadstring(game:HttpGet("https://raw.githubusercontent.com/shlexware/Orion/main/source"))()
 spawn(function()
 	function loadgame()
-        lib:MakeNotification({
+        hahahah:MakeNotification({
             Name = "Game Found!",
             Content = "Game: " .. game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId).Name .. "!",
             Icon = "rbxassetid://11044015191",
             Time = 5
         })
+	wait(2)
     end
 end)
 if game.PlaceId == 648362523 then
@@ -31,7 +32,7 @@ elseif game.PlaceId == 9872472334 then
     loadgame()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/MrMcHir/COCONUT-HUB/main/Games/Evade.lua"))()
 else
-    lib:MakeNotification({
+    hahahah:MakeNotification({
         Name = "Game Not Found!",
         Content = "Game: Not Supported",
         Icon = "rbxassetid://11044015191",
